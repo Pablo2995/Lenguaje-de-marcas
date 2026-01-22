@@ -1,0 +1,21 @@
+.tarjeta-simple{
+    border-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta-degradado{
+    background:linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: white;
+}
+
+.tarjeta-imagen{
+    background-color: coral;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}           
