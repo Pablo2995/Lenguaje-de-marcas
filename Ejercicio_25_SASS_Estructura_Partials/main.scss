@@ -1,0 +1,19 @@
+// 1. Importa tus parciales aquí
+@import 'variables';
+@import 'base';
+// 2. Añade estilos específicos debajo
+header {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+main {
+    padding: 20px;
+    line-height: 1.6;
+}
