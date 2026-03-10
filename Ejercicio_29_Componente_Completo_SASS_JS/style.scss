@@ -1,0 +1,52 @@
+// style.scss
+
+.tabs-container {
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+
+  .tabs-header {
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+
+    /* 1. Estila .tab-btn */
+    .tab-btn {
+      background: none;
+      border: none;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+
+      /* Usa &:hover y &.active */
+      &:hover {
+        background-color: #e9ecef;
+      }
+
+      &.active {
+        background-color: #fff;
+        border-bottom: 3px solid #007bff;
+        font-weight: bold;
+        color: #007bff;
+      }
+    }
+  }
+
+  .tabs-content {
+    padding: 20px;
+
+    /* 2. Estila los paneles. Por defecto display: none */
+    .tab-pane {
+      display: none; 
+
+      /* 3. Estila el panel activo con display: block */
+      &.active {
+        display: block; 
+      }
+    }
+  }
+}
