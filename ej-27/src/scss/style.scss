@@ -1,0 +1,84 @@
+// Variables de color súper vibrantes
+$color-fondo1: #a18cd1;
+$color-fondo2: #fbc2eb;
+$color-caja: #ffffff;
+$color-titulo: #ff5722;
+$color-texto: #4a4a4a;
+$color-boton: #00bcd4;
+$color-boton-hover: #ff4081;
+
+body {
+    background: linear-gradient(135deg, $color-fondo1 0%, $color-fondo2 100%);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.contenedor-magico {
+    background-color: transparentize($color-caja, 0.1);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    border: 5px dashed #fff;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: rotate(1deg) scale(1.02);
+    }
+}
+
+.titulo-brillante {
+    font-family: 'Fredoka One', cursive;
+    color: $color-titulo;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 0px rgba(255, 235, 59, 1);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.texto-divertido {
+    font-size: 1.2rem;
+    color: $color-texto;
+    font-weight: 700;
+}
+
+.caja-extra {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e1f5fe;
+    border-radius: 15px;
+    border: 2px solid #81d4fa;
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.boton-loco {
+    font-family: 'Fredoka One', cursive;
+    background-color: $color-boton;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 0px darken($color-boton, 15%);
+    transition: all 0.2s;
+
+    &:active {
+        transform: translateY(5px);
+        box-shadow: 0 0px 0px darken($color-boton, 15%);
+    }
+
+    &:hover {
+        background-color: $color-boton-hover;
+        box-shadow: 0 5px 0px darken($color-boton-hover, 15%);
+    }
+}
