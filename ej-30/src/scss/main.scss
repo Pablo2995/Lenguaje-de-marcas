@@ -1,0 +1,60 @@
+$primary: #2c3e50;
+$accent: #e74c3c;
+$white: #ffffff;
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
+    padding: 1rem;
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+
+        li a {
+            color: $white;
+            text-decoration: none;
+            margin: 0 15px;
+            &:hover { color: $accent; } // Nesting con selector de estado [cite: 89]
+        }
+    }
+
+    .burger {
+        display: none; // Se activará por JS en responsive
+        cursor: pointer;
+        div {
+            width: 25px;
+            height: 3px;
+            background-color: $white;
+            margin: 5px;
+        }
+    }
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    h1 { font-size: 3rem; color: $primary; }
+    
+    .cta-btn {
+        background: $accent;
+        color: $white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
